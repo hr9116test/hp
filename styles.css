@@ -278,5 +278,6 @@ a {
 
 
 /* Muted map to match theme */
-.hp-map-wrapper iframe { filter: grayscale(80%) sepia(20%) contrast(90%); }
+.hp-map-wrapper iframe { filter: sepia(15%) saturate(70%) contrast(105%) hue-rotate(-5deg); }
+
 
