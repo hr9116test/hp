@@ -1,11 +1,11 @@
-/* styles.css for Homepage */
+﻿/* styles.css for Homepage */
 :root {
-  /* Refined Luxury カラーパレチE�� (桁E) */
-  --color-base: #F9F8F6; /* ウォームオフ�EワイチE*/
+  /* Refined Luxury カラーパレチE�� (桁E) */
+  --color-base: #F9F8F6; /* ウォームオフ�EワイチE*/
   --color-surface: #FFFFFF;
-  --color-text-main: #2C2A28; /* ダークト�EチE/ チャコール */
+  --color-text-main: #2C2A28; /* ダークト�EチE/ チャコール */
   --color-text-sub: #7A7571;
-  --color-accent: #8A7B6B; /* ト�EチE/ グレイチE��ュブラウン */
+  --color-accent: #8A7B6B; /* ト�EチE/ グレイチE��ュブラウン */
   --color-accent-hover: #6D6052;
   --color-border: #E5E0DA;
   
@@ -274,4 +274,9 @@ a {
   .hp-sticky-footer { display: none; }
   body { padding-bottom: 0; }
 }
+
+
+
+/* Muted map to match theme */
+.hp-map-wrapper iframe { filter: grayscale(80%) sepia(20%) contrast(90%); }
 
