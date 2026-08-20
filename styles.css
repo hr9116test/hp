@@ -318,3 +318,10 @@ a {
   color: var(--color-text-main);
   font-family: var(--font-family-sans);
 }
+
+.hp-nav-logo img {
+  max-height: 50px;
+  width: auto;
+  max-width: 90%;
+  display: inline-block;
+}
