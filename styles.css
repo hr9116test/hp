@@ -68,27 +68,15 @@ a {
 /* =========================================================
    HOMEPAGE STYLES
    ========================================================= */
-.hp-nav {
-  position: absolute;
-  top: 0; left: 0; width: 100%;
-  padding: 1.5rem;
-  z-index: 10;
-  text-align: center;
-}
-.hp-nav-logo {
-  font-family: var(--font-family-base);
-  font-size: 1.5rem;
-  color: #fff;
-  letter-spacing: 0.1em;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-}
+.hp-nav { background-color: var(--color-surface); padding: 1rem; z-index: 10; text-align: center; border-bottom: 1px solid var(--color-border); }
+.hp-nav-logo { display: flex; justify-content: center; align-items: center; }
 
 /* Hero Section */
 .hp-hero {
   position: relative;
   height: 80vh;
   min-height: 500px;
-  background-image: url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop");
+  background-image: url("images/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -319,9 +307,7 @@ a {
   font-family: var(--font-family-sans);
 }
 
-.hp-nav-logo img {
-  max-height: 50px;
-  width: auto;
-  max-width: 90%;
-  display: inline-block;
-}
+.hp-nav-logo img { height: 50px; width: auto; }
+
+
+
