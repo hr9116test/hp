@@ -1,11 +1,11 @@
 ﻿/* styles.css for Homepage */
 :root {
-  /* Refined Luxury カラーパレチE�� (桁E) */
-  --color-base: #F9F8F6; /* ウォームオフ�EワイチE*/
+  /* Refined Luxury カラーパレット (案D) */
+  --color-base: #F9F8F6; /* ウォームオフホワイト */
   --color-surface: #FFFFFF;
-  --color-text-main: #2C2A28; /* ダークト�EチE/ チャコール */
+  --color-text-main: #2C2A28; /* ダークトープ / チャコール */
   --color-text-sub: #7A7571;
-  --color-accent: #8A7B6B; /* ト�EチE/ グレイチE��ュブラウン */
+  --color-accent: #8A7B6B; /* トープ / グレイッシュブラウン */
   --color-accent-hover: #6D6052;
   --color-border: #E5E0DA;
   
@@ -69,20 +69,18 @@ a {
    HOMEPAGE STYLES
    ========================================================= */
 .hp-nav {
-  background-color: var(--color-surface);
-  padding: 1rem;
+  position: absolute;
+  top: 0; left: 0; width: 100%;
+  padding: 1.5rem;
   z-index: 10;
   text-align: center;
-  border-bottom: 1px solid var(--color-border);
 }
 .hp-nav-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hp-nav-logo img {
-  height: 50px;
-  width: auto;
+  font-family: var(--font-family-base);
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 /* Hero Section */
@@ -90,7 +88,7 @@ a {
   position: relative;
   height: 80vh;
   min-height: 500px;
-  background-image: url("images/hero.jpg");
+  background-image: url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1200&auto=format&fit=crop");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -276,8 +274,47 @@ a {
 }
 
 
+/* Store Info Redesign */
+.hp-access-info {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
 
-/* Muted map to match theme */
-.hp-map-wrapper iframe { filter: sepia(15%) saturate(70%) contrast(105%) hue-rotate(-5deg); }
+.store-info-list {
+  background-color: var(--color-base);
+  padding: 2rem;
+  border-radius: var(--radius-sm);
+  margin: 0;
+}
 
+.store-info-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.2rem 0;
+}
 
+.store-info-item:first-child {
+  padding-top: 0;
+}
+
+.store-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.store-info-item dt {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-text-main);
+  font-family: var(--font-family-sans);
+  letter-spacing: 0.05em;
+}
+
+.store-info-item dd {
+  font-size: 1rem;
+  margin-left: 0;
+  line-height: 1.8;
+  color: var(--color-text-main);
+  font-family: var(--font-family-sans);
+}
